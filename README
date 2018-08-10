@@ -1,1 +1,28 @@
 Ruby testing environment... not much more to say about this for now. Mainly for testing purposes.
+
+____________________________________________________________________________
+
+
+Process for creating a new Git repo from local 
+(ASSUMING THERE IS NO REMOTE REPO):
+
+# go to local directory where you want to create the repo
+1. cd "git-repos"
+
+# create the repository, name it what you like
+2. git init "repoName"
+
+# create a readme file
+3. gedit README
+
+# add all files in the repo to the index
+4. git add -A 
+
+# make first commit with relevant message
+5. git commit -m "relevant message"
+
+# IF THERE ISN'T ALREADY A REMOTE REPOSITORY:
+6. git remote add origin https://github.com/nexu-phagos/"name-of-repo".git
+
+# push the local commits to the remote repo
+7. git push -u origin master
